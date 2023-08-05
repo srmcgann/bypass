@@ -205,7 +205,7 @@
             asset=srcimg
           }
         }
-				console.log(asset)
+	console.log(asset)
         if(asset.indexOf('.mp4')!==-1 || asset.indexOf('.webm')!==-1){
           jpg = document.createElement('video')
 					jpg.loop = true
@@ -219,6 +219,7 @@
         jpg[jpgIsVid?'oncanplaythrough':'onload']=e=>{
 					if(jpgIsVid){
             jpg.defaultPlaybackRate = playbackSpeed
+	    console.log('setting playbackspeed to :' jpg.defaultPlaybackRate)
             jpg.play()
 					}
           //setTimeout(()=>{
