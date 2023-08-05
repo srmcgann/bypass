@@ -220,7 +220,7 @@
 					if(jpgIsVid){
             jpg.defaultPlaybackRate = playbackSpeed
 	    console.log('setting playbackspeed to :' + jpg.defaultPlaybackRate)
-            jpg.play()
+            //jpg.play()
 					}
           //setTimeout(()=>{
           buffer___ = document.createElement('canvas')
@@ -228,7 +228,7 @@
           buffer___.height=1080
           bctx = buffer___.getContext('2d', {willReadFrequently: true})
           if(jpgIsVid){
-            jpg.play()
+	    setTimeout(()=>{jpg.play()},)
             vid=asset
             if(vid.videoWidth/vid.videoHeight>1.7777777778){
               w=c.width
