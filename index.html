@@ -304,7 +304,7 @@
         }
         if(window.location.href.indexOf('usecode=')!=-1){
           animationStyle=2
-          url=window.location.href.split('usecode=')[1].split('?')[0]
+          url=window.location.href.split('usecode=')[1].split('&')[0]
           await fetch(url).then(res=>res.text()).then(data => {
             chosenDemo = data
           })
